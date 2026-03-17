@@ -72,10 +72,3 @@ cd house-price-prediction
 pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 jupyter notebook housepricepredictionbycj.ipynb
 ```
-
-  
-
-## Author
-
-Chandragupta Jejurkar  
-Penn State York – Information Technology  
