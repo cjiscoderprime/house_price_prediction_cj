@@ -67,26 +67,13 @@ Predictions closely align with actual values, indicating effective learning of f
 ## How to Run
 
 ```bash
-git clone <your-repo-link>
+git clone <repo-link>
 cd house-price-prediction
 pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 jupyter notebook housepricepredictionbycj.ipynb
 ```
 
-## Why this project matters
-
-- Demonstrates end-to-end ML workflow  
-- Uses real-world dataset  
-- Applies gradient boosting (XGBoost)  
-- Shows understanding of evaluation metrics  
-
-## Improvements (Next Steps)
-
-- Hyperparameter tuning  
-- Feature engineering  
-- Model comparison (Random Forest, Linear Regression)  
-- Cross-validation  
-- Deployment (Flask / FastAPI)  
+  
 
 ## Author
 
