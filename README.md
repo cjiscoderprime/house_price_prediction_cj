@@ -72,3 +72,10 @@ cd house-price-prediction
 pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 jupyter notebook housepricepredictionbycj.ipynb
 ```
+## Key Learnings
+
+- Built an end-to-end machine learning pipeline using real-world data  
+- Gained hands-on experience with regression modeling using XGBoost  
+- Understood the importance of feature relationships through correlation analysis  
+- Learned how to evaluate models using R² Score and Mean Absolute Error  
+- Improved ability to visualize and interpret model performance  
