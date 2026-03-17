@@ -1,36 +1,38 @@
-**Overview**
+Overview
+
 This project builds a regression model to predict house prices using the California Housing dataset. The workflow includes data loading, preprocessing, exploratory data analysis, model training, and evaluation using standard regression metrics.
 
 The goal of this project is to demonstrate a complete end-to-end machine learning pipeline using real-world data.
 
-**Dataset**
+Dataset
 
 The dataset used in this project is the California Housing dataset, provided by scikit-learn.
 
 It contains the following features:
 
-**MedInc**: Median income
+MedInc: Median income
 
-**HouseAge**: Median house age
+HouseAge: Median house age
 
-**AveRooms**: Average number of rooms
+AveRooms: Average number of rooms
 
-**AveBedrms**: Average number of bedrooms
+AveBedrms: Average number of bedrooms
 
-**Population**: Block population
+Population: Block population
 
-**AveOccup**: Average occupancy
+AveOccup: Average occupancy
 
-**Latitude**
+Latitude
 
-**Longitude**
+Longitude
 
 Target variable:
 
 Price: Median house value
 
 Project Workflow
-**1. Data Loading**
+
+1. Data Loading
 
 Loaded dataset using sklearn.datasets.fetch_california_housing
 
@@ -38,7 +40,8 @@ Converted data into a pandas DataFrame
 
 Added target variable (price) to the dataset
 
-**2. Data Exploration**
+
+2. Data Exploration
 
 Checked dataset shape and structure
 
@@ -46,25 +49,28 @@ Verified missing values
 
 Generated statistical summary using describe()
 
-**3. Feature Analysis**
+3. Feature Analysis
 
 Computed correlation matrix
 
 Visualized correlations using a heatmap (Seaborn)
 
-**4. Data Preparation**
+
+4. Data Preparation
 
 Split features and target into X and Y
 
 Performed train-test split (80% training, 20% testing)
 
-**5. Model Training**
+
+5. Model Training
 
 Used XGBoost Regressor (XGBRegressor)
 
 Trained model on training dataset
 
-**6. Model Evaluation**
+
+6. Model Evaluation
 
 Evaluation metrics used:
 
@@ -78,13 +84,15 @@ Training data
 
 Test data
 
-**7. Visualization**
+
+7. Visualization
 
 Scatter plot of actual vs predicted prices
 
 Helps visualize model performance and prediction accuracy
 
-**Technologies Used**
+
+Technologies Used
 
 Python
 
@@ -100,7 +108,8 @@ Scikit-learn
 
 XGBoost
 
-**Results**
+
+Results
 
 The model demonstrates strong predictive performance using XGBoost
 
@@ -108,7 +117,8 @@ R² score and MAE are used to quantify accuracy
 
 Visualization shows alignment between predicted and actual values
 
-**How to Run**
+
+How to Run
 
 Clone the repository
 
@@ -117,3 +127,4 @@ pip install numpy pandas matplotlib seaborn scikit-learn xgboost
 
 Run the Jupyter Notebook:
 jupyter notebook housepricepredictionbycj.ipynb
+
