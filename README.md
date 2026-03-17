@@ -1,123 +1,94 @@
-Overview
+# House Price Prediction
 
-This project builds a regression model to predict house prices using the California Housing dataset.
+Machine learning model to predict California housing prices using XGBoost.
 
-The workflow covers:
+## What this project does
 
-Data loading
+This project builds a regression model that predicts median house prices using real-world housing data. It demonstrates a complete machine learning pipeline from raw data to evaluated model.
 
-Data preprocessing
+## Dataset
 
-Exploratory data analysis
+California Housing dataset (from scikit-learn)
 
-Model training
+**Input features:**
+- MedInc – Median income  
+- HouseAge – Median house age  
+- AveRooms – Average rooms  
+- AveBedrms – Average bedrooms  
+- Population  
+- AveOccup – Average occupancy  
+- Latitude  
+- Longitude  
 
-Model evaluation
+**Target:**
+- Price – Median house value  
 
-The goal is to demonstrate a complete end-to-end machine learning pipeline using real-world data.
+## Pipeline
 
-Dataset
+### Data
+- Loaded using `fetch_california_housing`
+- Converted to pandas DataFrame
+- Target column added
 
-The dataset used in this project is the California Housing dataset, provided by scikit-learn.
+### Exploration
+- Checked shape, structure, and null values  
+- Used `describe()` for summary statistics  
 
-Features
+### Feature Analysis
+- Correlation matrix computed  
+- Heatmap used to identify relationships  
 
-MedInc – Median income
+### Preparation
+- Split into features (X) and target (y)  
+- Train-test split (80/20)  
 
-HouseAge – Median house age
+### Model
+- XGBoost Regressor (`XGBRegressor`)  
+- Trained on structured tabular data  
 
-AveRooms – Average number of rooms
+### Evaluation
+- R² Score  
+- Mean Absolute Error (MAE)  
+- Evaluated on both training and test sets  
 
-AveBedrms – Average number of bedrooms
+### Visualization
+- Actual vs Predicted scatter plot  
+- Used to inspect model performance  
 
-Population – Block population
+## Tech Stack
 
-AveOccup – Average occupancy
+Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, XGBoost
 
-Latitude
+## Results
 
-Longitude
+The model achieves strong predictive performance on housing price estimation.  
+Predictions closely align with actual values, indicating effective learning of feature relationships.
 
-Target Variable
+## How to Run
 
-Price – Median house value
+```bash
+git clone <your-repo-link>
+cd house-price-prediction
+pip install numpy pandas matplotlib seaborn scikit-learn xgboost
+jupyter notebook housepricepredictionbycj.ipynb
+```
 
-Project Workflow
-1. Data Loading
+## Why this project matters
 
-Loaded dataset using sklearn.datasets.fetch_california_housing
+- Demonstrates end-to-end ML workflow  
+- Uses real-world dataset  
+- Applies gradient boosting (XGBoost)  
+- Shows understanding of evaluation metrics  
 
-Converted data into a pandas DataFrame
+## Improvements (Next Steps)
 
-Added target variable (price)
+- Hyperparameter tuning  
+- Feature engineering  
+- Model comparison (Random Forest, Linear Regression)  
+- Cross-validation  
+- Deployment (Flask / FastAPI)  
 
-2. Data Exploration
+## Author
 
-Checked dataset shape and structure
-
-Verified missing values
-
-Generated statistical summary using describe()
-
-3. Feature Analysis
-
-Computed correlation matrix
-
-Visualized correlations using a heatmap (Seaborn)
-
-4. Data Preparation
-
-Split features and target into X and Y
-
-Performed train-test split (80% training, 20% testing)
-
-5. Model Training
-
-Used XGBoost Regressor (XGBRegressor)
-
-Trained model on training dataset
-
-6. Model Evaluation
-
-Evaluation metrics used:
-
-R² Score
-
-Mean Absolute Error (MAE)
-
-Evaluation performed on:
-
-Training data
-
-Test data
-
-7. Visualization
-
-Scatter plot of actual vs predicted prices
-
-Helps visualize model performance and prediction accuracy
-
-Tech Stack
-
-Python
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-XGBoost
-
-Results
-
-The model demonstrates strong predictive performance using XGBoost
-
-R² score and MAE are used to quantify accuracy
-
-Visualization shows alignment between predicted and actual values
-
+Chandragupta Jejurkar  
+Penn State York – Information Technology  
